@@ -6,7 +6,8 @@ const requestHandler = (req,res) =>{
     res.status(200).json({
         msg:"working fine",
         method:req.method,
-        url: req.url
+        url: req.url,
+        port
     })
 }
 
