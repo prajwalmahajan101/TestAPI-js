@@ -3,10 +3,12 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const requestHandler = (req,res) =>{
+    let url = req.url;
+    let method = req.method;
     res.status(200).json({
         msg:"working fine",
-        method:req.method,
-        url: req.url,
+        method,
+        url,
         port
     })
 }
